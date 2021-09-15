@@ -61,7 +61,7 @@ _Next part is pretty abstract. Make sure to focus for now, and trust that it wil
 
 ### Higher order function and callbacks!
 
-- A callback function is a function, anonymous or not, which is passed as an argument to another function.
+- A callback function is a function, anonymous or not, which is passed as an argument to another function and called by that function.
 
 - A higher order function is a function that takes in a callback function as an argument and executes it.
 
