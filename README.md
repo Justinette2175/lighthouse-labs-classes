@@ -16,37 +16,32 @@ But if you find yourself a bit stunned, trust it's the kind of mental gynmastics
 
 ## Our task for today
 
-Our boss has asked us to simulate a food tasting robot.
+Our boss has asked us to simulate a washing machine.
 
 It should:
 
-1. Eat
-2. Count to 10 (letting the flavor seep in)
-3. Let us know what they think (ex. Screaming?)
+1. Wash clothes for a certain number of spins
+2. Let us know when it is done (ex. Screaming, Beeping, we pick the ringtone!)
 
 ## Step by step
 
-- [ ] Let's implement the taste food function based on our initial requirements (eat, wait, scream)
+- [ ] Let's implement a simple wash clothes function that does 10 spins and then screams "AAAAAAAAAAA"
 
-- [ ] Let’s implement a function called scream to store the scream itself, so we can scream whenever we want to.
+- [ ] Let’s implement a function called scream to store the scream itself, so we can scream whenever we want to and refactor initial function
 
-- [ ] Let's now refator that screamOnTen to replace the console log statement with the scream function
-
-- [ ] Now, let's make another robot food taster that gives a thumbs up at the end
+- [ ] Now, let's make another washing machine that warns us the cycle is over with a loud beep
 
 - [ ] What's the problem with this?
 
-- [ ] What if we want to count to any number (argument passing)
+- [ ] What if we want to set the wash cycle to another number?
 
-- [ ] How can we make a function that counts to 10 and then does something, anything?
+- [ ] How can we make a washing mashing where we can both pick the cycle and the ringtone?
 
-- [ ] What if we will never really need to reuse the scream or wink functions, and we don't want to store them in variables?
+- [ ] What if we will never really need to reuse the scream or beep functions, and we don't want to store them in variables?
 
 - [ ] Let's instead use the double arrow notation here
 
-- [ ] How would we modify our function so that it counts to any number we want and then does any action we want?
-
-- [ ] How would we modify our function so that it counts to any number, and then does two actions?
+- [ ] How would we modify our function so that it washes for however many spins we want, then warns us that it's done in two consecutive ways (beeping first, then screaming)?
 
 - [ ] Can we change the order of the arguments to that function?
 
@@ -54,7 +49,7 @@ It should:
 
 _Next part is pretty abstract. Make sure to focus for now, and trust that it will make sense in time!_
 
-- [ ] So far, we have never passed in any arguments to our callback function. Let's instead modify the scream function so that now screams a different number of 'A's each time (same number that is passed as the count).
+- [ ] So far, we have never passed in any arguments to our callback function. Let's instead modify the scream function so that it now screams for twice as long as the wash cycle.
 
 - [ ] Let's look at another example. Let's make a function that does any action we like on two numbers.
 
