@@ -23,11 +23,8 @@ function countToNumberAndBeep(countNumber) {
 
 // Washing clothes
 function washClothes(numberOfSpins, ringAction) {
-  // spin a certain number of time
-  for (var i = 0; i < numberOfSpins; i++) {
-    console.log("spin", i + 1);
-  }
+  setTimeout(() => {}, numberOfSpins * 1000);
   ringAction(numberOfSpins);
 }
 
-washClothes(10, scream);
+washClothes(1, scream);

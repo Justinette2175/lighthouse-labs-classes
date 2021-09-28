@@ -8,20 +8,27 @@ const rl = readline.createInterface({
 
 const answers = [];
 
-const askQuestion = (question) => {
+const askQuestion = (question, answersUpToNow) => {
   return new Promise((resolve, reject) => {
     rl.question(question, (answer) => {
-      resolve(answer);
+      const newAnswers = [...answersUpToNow, answer];
+      resolve(newAnswers);
     });
   });
 };
 
-const questionPromise1 = askQuestion("Where do you live?")
-  .then(() => askQuestion("How old are you?"))
-  .then(() => askQuestion("How many pets do you have?"))
-  .then(() => askQuestion("Are we done here?"));
+const myAnswers = [];
 
-questionPromise1.then((answer) => {
-  rl.close();
-  console.log("do done here", answer);
-});
+const myPromises = askQuestion("Where do you live?", [])
+  .then((answers1) => {
+    console.log("answer1", answers1);
+    return askQuestion("How old are you?", answers1);
+  })
+  .then((answers2) => {
+    console.log("answer2", answers2);
+    return askQuestion("How many pets do you have?", answers2);
+  })
+  .then((answers3) => {
+    console.log("answer3", answers3);
+    return askQuestion("Are we done here?", answers3);
+  });

@@ -1,5 +1,8 @@
 # W3D2 CRUD / BREAD over http
 
+Thanks to Andy Lindsay for this class's content!
+https://github.com/andydlindsay/jun21-2021/tree/master/w03d02
+
 ## TO DO
 
 - [ ] What is CRUD? What is BREAD?

@@ -17,8 +17,9 @@ We've seen how promises are used in async programming with waiting for user inpu
 - [ ] What happens if we enter an invalid country name?
 - [ ] Now, let's make it so that if we enter an invalid country, the program warns us that there was a problem and prompts us again.
 - [ ] Now, we want to find all of the countries that have the same calling code as the country we entered
-- [ ] What if we wanted to find the calling codes of multiple countries at once?
-- [ ] What if we wanted to call whichever country code comes from
+- [ ] Instead of calling codes, let's retrieve the country codes of bordering countries.
+- [ ] What if we now wanted to get the bordering countries of all of our originial country's bordering countries?
+- [ ] What if we wanted to ask for a bunch of country codes and call whichever country code comes first?
 
 ## Recap on callbacks
 
