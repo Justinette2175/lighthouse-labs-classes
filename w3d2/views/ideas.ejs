@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All of our Ideas</title>
+  </head>
+
+  <body>
+    <h2>All the ideas!</h2>
+
+    <h2>Create a new idea!!</h2>
+    <form method="POST" action="/ideas">
+      <label>Thought</label>
+      <input name="thought" />
+      <br />
+
+      <label>Thinker</label>
+      <input name="thinker" />
+      <br />
+
+      <label>Nuanced</label>
+      <input name="nuanced" />
+      <br />
+
+      <button type="submit">Create!</button>
+    </form>
+
+    <% for (const ideaKey in ideas) { %>
+    <div style="border: 1px solid orange">
+      <h2>Thought: <%= ideas[ideaKey].thought %></h2>
+      <h3>Thinker: <%= ideas[ideaKey].thinker %></h3>
+      <h3>Nuanced: <%= ideas[ideaKey].nuanced %></h3>
+      <a href="/ideas/<%= ideaKey %>">Details</a>
+    </div>
+    <% } %>
+  </body>
+</html>

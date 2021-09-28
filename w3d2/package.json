@@ -1,0 +1,17 @@
+{
+  "name": "w3d2",
+  "version": "1.0.0",
+  "description": "mplementing CRUD over HTTP with Express Render vs Redirect pattern in multi-page apps Forms (action, method) Links (a tags) compared to Forms Exploring the DevTools network tab in Chrome",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

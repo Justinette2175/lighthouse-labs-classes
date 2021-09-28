@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An idea</title>
+  </head>
+  <body>
+    <h2>Single idea page</h2>
+    <a href="/ideas">Back to ideas</a>
+    <div>
+      <h3><%= idea.thought%></h3>
+      <p>By: <%= idea.thinker%></p>
+      <p>nuanced?: <%= idea.nuanced%></p>
+    </div>
+
+    <div>
+      <form method="POST" action="/ideas/<%= ideaKey %>">
+        <label>New thought</label>
+        <input name="thought" />
+        <button type="submit">Change that thought!</button>
+      </form>
+    </div>
+
+    <div>
+      <form method="POST" action="/ideas/<%= ideaKey %>/delete">
+        <button action="submit">Delete</button>
+      </form>
+    </div>
+  </body>
+</html>
